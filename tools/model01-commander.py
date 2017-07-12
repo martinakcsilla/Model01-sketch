@@ -25,13 +25,21 @@ class AppSel (object):
                "chat": ["slack", "Mstdn"],
                "emacs": "emacs",
                "term": "gnome-terminal",
-               "web": ["chrom", "Chrome"]}
+               "web": ["chrom", "Chrome"],
+               "pwmgr": "keepass",
+               "social": {"apps": ["mstdn", "tweetdeck"]}}
 
-    def select (self, apps):
+    def select (self, apps, with_escape = True):
         if isinstance (apps, list):
             for app in apps:
                 if self.select (app):
                     break
+
+        if isinstance (apps, dict):
+            for app in apps["apps"]:
+                self.select(app, with_escape = False)
+            sh.xdotool ("key", "Escape")
+            return True
 
         success = True
         try:
@@ -39,7 +47,8 @@ class AppSel (object):
         except sh.ErrorReturnCode:
             success = False
 
-        sh.xdotool ("key", "Escape")
+        if with_escape:
+            sh.xdotool ("key", "Escape")
         return success
 
     def switchTo (self, app):
