@@ -37,7 +37,8 @@ This is a [Dvorak][dvorak]-inspired layout, with some changes here and there, to
 
  [dvorak]: https://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard
 
-[![Base layer](images/base-layer.png)](http://www.keyboard-layout-editor.com/#/gists/f938a01e31f6b329364aea02cbda9977)
+![Base layer](images/base-layer.png)
+[(Layout editor)](http://www.keyboard-layout-editor.com/#/gists/f938a01e31f6b329364aea02cbda9977)
 
 * Keys with blue front-prints are activated by tapping or holding the left palm key (also colored blue).
 * Keys with red front-prints are activated by tapping or holding the right palm key (also colored red).
@@ -82,7 +83,8 @@ This is a [Dvorak][dvorak]-inspired layout, with some changes here and there, to
 
 ## ADORE layer
 
-[![ADORE layer](images/adore-layer.png)](http://www.keyboard-layout-editor.com/#/gists/da05641b419790a7a4c1297c4e58ec9f)
+![ADORE layer](images/adore-layer.png)
+[(Layout editor)](http://www.keyboard-layout-editor.com/#/gists/da05641b419790a7a4c1297c4e58ec9f)
 
 A heavy work in progress. The main difference is in the layout of alphanumerics, but most other things work as on the [base layer](#base-layer).
 
